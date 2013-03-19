@@ -1,0 +1,5 @@
+Öppna en liten ruta första gången appen startas.
+Rutan ska innehålla instruktioner om hur den fungerar. 
+Finnas möjlighet att klicka i en ruta som säger. Visa instruktioner vid start. 
+
+Ändra så att antingen fyrklicken trycker upp menyraden där det finns en instruktionsknapp alternativt att fyrklicken öppnar 

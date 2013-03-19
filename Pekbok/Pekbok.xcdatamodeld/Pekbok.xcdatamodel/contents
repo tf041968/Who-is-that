@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C2034" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Cat" representedClassName="Cat" syncable="YES">
+        <attribute name="categoryID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="holds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Obj" inverseName="belongsTo" inverseEntity="Obj" syncable="YES"/>
+    </entity>
+    <entity name="Obj" representedClassName="Obj" syncable="YES">
+        <attribute name="imageFullUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageThumbUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sound" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="belongsTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cat" inverseName="holds" inverseEntity="Cat" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Cat" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Obj" positionX="-63" positionY="189" width="128" height="135"/>
+    </elements>
+</model>
